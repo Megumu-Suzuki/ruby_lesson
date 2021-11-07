@@ -56,6 +56,18 @@ else
   puts('no')
 end
 
+# 条件演算子(三項演算子)
+# 下二つは同じ意味
+n = 11
+# ①
+if n > 10
+  '10より大きい'
+else
+  '10以下'
+end
+# ②
+n > 10 ? '10より大きい' : '10以下'
+
 ## 論理演算子
 t1 = true
 f1 = true
@@ -79,8 +91,27 @@ name =
   end
 puts(name)
 
+# case文
+country = 'アメリカ'
+message =
+  case country
+  when 'japan', '日本'
+    'こんにちは'
+  when 'us', 'アメリカ'
+    'Hello'
+  when 'italy', 'イタリア'
+    'ciao'
+  else
+    '???'
+  end
+puts message
 #修飾子
 number = 1
 point = 5
 point *= 5 if number == 1
 puts(point)
+
+def add(a,b)
+  a + b
+end
+puts add(1, 2)
