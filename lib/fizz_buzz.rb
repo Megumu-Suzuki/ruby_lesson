@@ -1,4 +1,4 @@
-def fiz_buzz(n)
+def fizz_buzz(n)
   if n % 15 == 0
     'Fizz Buzz'
   elsif n % 3 == 0
@@ -9,9 +9,3 @@ def fiz_buzz(n)
     n.to_s
   end
 end
-
-puts fiz_buzz(1)
-puts fiz_buzz(3)
-puts fiz_buzz(5)
-puts fiz_buzz(8)
-puts fiz_buzz(15)
